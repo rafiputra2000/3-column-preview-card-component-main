@@ -1,0 +1,109 @@
+/*******************************SELECTOR***************************************/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 15px;
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  margin: 30px auto;
+  font-size: 40px;
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 100px;
+  line-height: 2;
+}
+
+/*******************************CLASS SELECTOR***********************************/
+
+.main-container{
+  margin: 100px auto;
+  width: 60%;
+}
+
+.card-container{
+  display: flex;
+  box-shadow: 5px 5px 5px 5px hsl(245, 75%, 52%, 0.25);
+  border-radius: 10px;
+}
+
+.template{
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+.card-1{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.card-2{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.btn{
+  background-color: hsl(0, 0%, 95%);
+  text-align: center;
+  border-radius: 40px;
+  padding: 15px 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn:hover, .btn:active{
+  background-color: Transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+
+.button-1{
+  color: hsl(31, 77%, 52%);
+}
+
+.button-2{
+  color: hsl(184, 100%, 22%);
+}
+
+.button-3{
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+  margin-top: 50px;
+}
+
+/*******************************Media quaries*************************************/
+
+@media screen and (max-width:620px){
+  .card-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .card-3{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
