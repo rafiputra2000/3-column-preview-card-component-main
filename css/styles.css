@@ -90,6 +90,12 @@ p{
 /*******************************Media quaries*************************************/
 
 @media screen and (max-width:620px){
+  
+  .main-container{
+    margin: 100px auto;
+    width: 80%;
+  }
+  
   .card-container{
     display: flex;
     flex-direction: column;
